@@ -1,0 +1,32 @@
+{
+    "name": "tudor-rusu/laravel-universal-translator",
+    "description": "A tool for managing your translations, using database, language files or other sources",
+    "homepage": "https://github.com/tudor-rusu/laravel-universal-translator",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tudor Rusu",
+            "email": "tudor.rusu@hotmail.com",
+            "homepage": "https://tudor.rusu.tech/"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2|^8.0|^8.2",
+        "illuminate/translation": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TudorRusu\\LaravelUniversalTranslator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TudorRusu\\LaravelUniversalTranslator\\UniversalTranslatorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
